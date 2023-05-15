@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  
+  background-color: #333;
+}
+.main-container{
+  margin-left: 30%;
+  justify-content: center;
+  width: 40%;
+  height: 20px;
+  border-radius: 14px;
+  background-color: white;
+  display: flex;
+  color: black;
+ 
+  align-items: center;
+  height: 100vh;
+}
+.center-container{
+  height: 500px;
+  width: 350px;
+}
+.app-heading{
+  margin-left: 0%;
+  padding: 4px;
+  
+ 
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+}
+.input-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.input-box-todo{
+  margin-left: 10px;
+  width: 70%;
+  height: 40px;
+  border-radius: 14px;
+  background-color:lightgrey;
+  border:1px solid black;
+  padding-left: 10px;  
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+  outline: none;
+  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+}
+.add-btn{
+  width:60px;
+  height:50px;
+  border-radius: 20%;
+  border:none;
+  background-color:#09cd2d;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  margin-left: 10px;  
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(11, 10, 10, 0.3);
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.add-btn:active{
+  box-shadow: none;
+}
+.list-container{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.list-item{
+  list-style-type: none;
+  /* background-color: #596e8b; */
+  color:rgb(16, 16, 16);
+  padding:1px;
+  padding-left: 5px;
+  border-radius: 5px; 
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.icons{
+  position: absolute;
+  right: 10px;
+  color: #069820;
+}
+.icons:hover{
+  display: inline;
+}
+.icons i{
+  margin: 4px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.1s;   
+}
+.icons i:hover{
+  transform: scale(1.2);  
+}
+.icon-delete:hover{
+  color: red;
+}
+
+.cancel-icon {
+  display: none;
+  position: absolute;
+  right: 40px;
+  top: 25%;
+}
+
+.list-item:hover .cancel-icon {
+  display: inline;
+  color: #09cd2d;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+ 
+}
+
+/* Custom checkbox style when checked */
+.custom-checkbox:checked {
+  background-color: #09cd2d;
+}
